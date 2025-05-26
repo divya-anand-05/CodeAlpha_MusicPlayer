@@ -1,0 +1,208 @@
+:root {
+  --bg-color: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  --text-color: #2e2e2e;
+  --accent-color: #ff6b6b;
+  --button-bg: #ff6b6b;
+  --button-text: #ffffff;
+  --card-bg: #f8dcdcf8;
+}
+
+[data-theme="dark"] {
+  --bg-color: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  --text-color: #ffffff;
+  --accent-color: #00f9ff;
+  --button-bg: #00f9ff;
+  --button-text: #000000;
+  --card-bg: #1c1c2b;
+}
+
+
+body {
+  background: var(--bg-color);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  color: var(--accent-color);
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(240, 36, 172, 0.5);
+}
+
+body.dark h1{
+  text-shadow: 2px 2px 8px rgba(0, 242, 255, 0.5);
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  margin: 20px auto;
+  width: fit-content;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.search-bar input[type="text"] {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 250px;
+  background-color: #f2f2f2;
+  color: #333;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+  box-shadow: 0 0 8px var(--accent-color);
+}
+
+.search-bar button:first-of-type {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+}
+
+.search-bar button:first-of-type:hover {
+  background-color: #ff3c3c;
+}
+
+#themeToggle {
+  background-color: #444;
+  color: var(--button-text);
+}
+
+#themeToggle:hover {
+  background-color: #666;
+}
+
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.song {
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.song:hover {
+  transform: translateY(-5px);
+}
+
+.song img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.song-details strong {
+  display: block;
+  font-size: 16px;
+  color: var(--accent-color);
+}
+
+.song-details em {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.like-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #ff4d6d;
+  transition: transform 0.2s;
+}
+
+.like-btn.liked {
+  transform: scale(1.2);
+}
+
+button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 5px;
+  font-weight: bold;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+}
+
+.lyrics-btn {
+  background-color: var(--accent-color);
+  color: var(--button-text);
+}
+
+.fullview-btn {
+  background-color: #ff00ff;
+  color: white;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.spinning-image {
+  border: 6px solid var(--accent-color);
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.6);
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#fullscreenTitle {
+  color: var(--accent-color);
+}
+
+#fullscreenView button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+}
+
+#fullscreenView button:hover {
+  background-color: #555;
+
+
+}
+
+
