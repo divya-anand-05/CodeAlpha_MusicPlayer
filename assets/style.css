@@ -201,8 +201,73 @@ button {
 
 #fullscreenView button:hover {
   background-color: #555;
+}
 
+/* 🌐 For tablets and small desktops */
+@media (max-width: 1024px) {
+  .search-bar {
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+  }
 
+  .search-bar input[type="text"] {
+    width: 100%;
+  }
+
+  .song {
+    width: 45%;
+  }
+
+  .fullscreen {
+    padding: 15px;
+  }
+}
+
+/* 📱 For mobile devices */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .search-bar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .search-bar input[type="text"] {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .song {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .song img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .like-btn {
+    font-size: 18px;
+  }
+
+  button {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .fullscreen img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .fullscreen button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
 }
 
 
