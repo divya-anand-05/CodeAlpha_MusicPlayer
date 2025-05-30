@@ -1,4 +1,4 @@
-# 🎵 Tamil Music Player Web App
+# 🎵 Music Player 
 
 A modern Tamil music player built with **HTML**, **CSS**, and **JavaScript** that uses the **Deezer API** to search and stream song previews. Includes lyrics support, themes, likes, and fullscreen mode – all optimized for a clean user experience.
 
@@ -63,9 +63,11 @@ tamil-music-player/
 
 ---
 
-## 🖼️ Screenshots
+## ❤️ Credits
 
-> *(Add UI previews here like Search view, Fullscreen player, Dark mode, Lyrics modal, etc.)*
+    Deezer API
+
+    Render for hosting the proxy
 
 ---
 
