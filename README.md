@@ -1,6 +1,6 @@
 # 🎵 Music Player 
 
-A modern Tamil music player built with **HTML**, **CSS**, and **JavaScript** that uses the **Deezer API** to search and stream song previews. Includes lyrics support, themes, likes, and fullscreen mode – all optimized for a clean user experience.
+A modern music player built with **HTML**, **CSS**, and **JavaScript** that uses the **Deezer API** to search and stream song previews. Includes lyrics support, themes, likes, and fullscreen mode – all optimized for a clean user experience.
 
 ---
 
