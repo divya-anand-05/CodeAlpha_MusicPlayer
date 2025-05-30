@@ -134,7 +134,7 @@ audio.addEventListener("pause", () => {
                 <strong>${song.title}</strong>
                 <em>${song.artist.name}</em>
               </div>
-              <audio controls autoplay src="${song.preview}" id="audio-${song.id}"></audio>
+              <audio controls src="${song.preview}" id="audio-${song.id}"></audio>
               <input type="range" min="0" max="1" step="0.01" value="1" class="volume-slider"
                      oninput="document.getElementById('audio-${song.id}').volume = this.value">
 
@@ -272,7 +272,7 @@ function renderSongs(songsArray) {
         <strong>${song.title}</strong>
         <em>${song.artist.name}</em>
       </div>
-      <audio controls autoplay src="${song.preview}" id="audio-${song.id}"></audio>
+      <audio controls src="${song.preview}" id="audio-${song.id}"></audio>
       <input type="range" min="0" max="1" step="0.01" value="1" class="volume-slider"
              oninput="document.getElementById('audio-${song.id}').volume = this.value">
       <div>
