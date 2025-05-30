@@ -201,6 +201,7 @@ function toggleRepeat() {
   const btn = document.querySelector("button[onclick='toggleRepeat()']");
   btn.style.backgroundColor = isRepeat ? '#2196f3' : '';
 }
+document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("keydown", function (e) {
   if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
     return; // Stop here, don't do anything else
@@ -248,6 +249,7 @@ case "arrowleft":
 
   }
 });
+    });
 
 let showingFavorites = false;
 
