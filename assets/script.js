@@ -77,7 +77,7 @@ let isRepeat = false;
           <strong>${song.title}</strong>
           <em>${song.artist.name}</em>
         </div>
-        <audio controls autoplay src="${song.preview}" id="audio-full" onended="handleSongEnd()"></audio>
+        <audio controls src="${song.preview}" id="audio-full" onended="handleSongEnd()"></audio>
         <input type="range" min="0" max="1" step="0.01" value="1" class="volume-slider"
                oninput="document.getElementById('audio-full').volume = this.value">
                 <div class="fullscreen-controls">
@@ -202,6 +202,9 @@ function toggleRepeat() {
   btn.style.backgroundColor = isRepeat ? '#2196f3' : '';
 }
 document.addEventListener("keydown", function (e) {
+  if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+    return; // Stop here, don't do anything else
+  }
   const audio = document.getElementById("audio-full");
 
   switch (e.key.toLowerCase()) {
